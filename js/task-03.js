@@ -12,3 +12,23 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+const imagesArr = images.map(image => {
+  const imgSrc = image.url;
+  const imgAlt = image.alt;
+return `<li class="img-item"><img src="${imgSrc}" alt="${imgAlt}" class="img"></li>`
+})
+
+const containerElem = document.querySelector('.gallery');
+containerElem.insertAdjacentHTML('beforeend', imagesArr.join(''));
+console.log(imagesArr);
+
+
+// const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
+// const itemsArr = technologies.map((technology) => {
+//   return `<li>${technology}</li>`;
+// })
+// console.log(itemsArr);
+// const listElement = `<ul>${itemsArr.join('')}</ul>`;
+// document.body.insertAdjacentHTML('beforeend', listElement);

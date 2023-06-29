@@ -22,3 +22,26 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* task 3 gallery styles */
+
+.gallery {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+
+  padding: 40px;
+
+  list-style: none;
+}
+
+.img-item {
+display: block;
+width: calc((100% - 24px / 3));
+
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
