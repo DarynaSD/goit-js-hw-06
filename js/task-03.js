@@ -25,10 +25,3 @@ containerElem.insertAdjacentHTML('beforeend', imagesArr.join(''));
 console.log(imagesArr);
 
 
-// const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
-// const itemsArr = technologies.map((technology) => {
-//   return `<li>${technology}</li>`;
-// })
-// console.log(itemsArr);
-// const listElement = `<ul>${itemsArr.join('')}</ul>`;
-// document.body.insertAdjacentHTML('beforeend', listElement);
